@@ -24,15 +24,3 @@ if __name__ == '__main__':
     
         
         
-# n = 120012
-# print n/2
-# a = map(int, str(n)) 
-# 
-# #print a[:len(a)/2-1:-1]
-# #print sum(a[:len(a)/2-1:-1])
-# 
-# #print range(len(a)/2)
-# sm = sum(int(a[i]) for i in range(len(a)/2))
-# sm2 = sum(a[:len(a)/2-1:-1])
-# print sm 
-# print sm2

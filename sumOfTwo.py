@@ -9,25 +9,34 @@ sumOfTwo(a, b, v) = true.
 '''
 from timeit import itertools
 
-# def sumOfTwo(a, b, v):  
-#     dicta = {}
-#     dictb= {}
-#     for item in a:
-#         dicta[item] = 1
-#     print dicta
-#     for item in b:
-#         if (v-item) in dicta: 
-#             return True
-#     return False
-"""
->>> import itertools
->>> list1=['a','b','c']
->>> list2=[1,2]
->>> zip(x,list2) for x in itertools.permutations(list1,len(list2))]
-"""
+ def sumOfTwo(a, b, v): 
+	'''
+	Method 1
+	''' 
+     dicta = {}
+     dictb= {}
+     for item in a:
+         dicta[item] = 1
+     print dicta
+     for item in b:
+         if (v-item) in dicta: 
+             return True
+     return False
+
+ import itertools
+'''
+Method 2
+'''
+ list1=['a','b','c']
+ list2=[1,2]
+ zip(x,list2) for x in itertools.permutations(list1,len(list2))]
 
 
-def sumOfTwojagan(a, b, v):
+
+def sumOfTwo(a, b, v):
+	'''
+	Method 3
+	'''
     combined = [zip(i,a) for i in itertools.permutations(b,len(a))]
     cc = map(sum,itertools.chain(*combined))
     if v in cc:
@@ -37,6 +46,9 @@ def sumOfTwojagan(a, b, v):
 
 
 def sumOfTwo(a, b, v):
+	'''
+	Method 4
+	'''
     #if len(a) == 0 or len(b) == 0:
     #    return False
     s = map(sum,itertools.product(a, b))
@@ -45,7 +57,10 @@ def sumOfTwo(a, b, v):
     return v in s
 
 
-def sumOfTwoMaya(a, b, v): 
+def sumOfTwo(a, b, v): 
+	'''
+	Method 5
+	'''
     x = [] 
     for i in range(len(a)):
         for j in range(len(b)):

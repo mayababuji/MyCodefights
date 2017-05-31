@@ -1,7 +1,18 @@
 #!/usr/bin/env python
 #-*-coding : utf-8 -*-
+'''
+The string s contains dashes that split it into groups of characters. You are given an integer k that represents the number of characters in groups that your output should have. Your goal is to return a new string that breaks s into groups with a length of k by placing dashes at the correct intervals. If necessary, the first group of characters can be shorter than k. It is guaranteed that there are no consecutive dashes in s.
 
+Example
+
+For s = "2-4a0r7-4k" and k = 4, the output should be
+stringReformatting(s, k) = "24a0-r74k";
+
+'''
 def stringReformatting(s, k):
+	'''
+	Method 1
+	'''
     s = s.replace("-","")
     str_ln = len(s)- 1
     new_str = []
@@ -16,8 +27,6 @@ def stringReformatting(s, k):
     return "".join(new_str)
         
         
-def sortByString(s, t):
-    return "".join(sorted(s,key=t.index))
 
 
 

@@ -21,13 +21,3 @@ if __name__ == '__main__':
     print makeArrayConsecutive2(statues)
     
     
-# statues = [5, 4, 6]
-# statues.sort()
-# count = []
-# for i in range(len(statues)-1):
-# 
-#     if statues[i+1] - statues[i] > 1:
-#         a = statues[i+1] - statues[i] -1
-#         count.append(a)
-# print sum(count)
-        #print sum(count)
